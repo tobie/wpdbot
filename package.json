@@ -10,5 +10,9 @@
     "jerk":    ">= 1.1.23"
   },
   "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  }
 }
