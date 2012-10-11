@@ -25,11 +25,26 @@ var others = {
         }
       });
       return 'Here is the result of your search for "' + rest + '": ' + u;
+  },
+  
+  help: function() {
+    var output = "Here's a list of all the commands I support: ";
+    var c = Object.keys(commands);
+    Object.keys(others).forEach(function(o) {
+      c.push(o)
+    });
+    c.sort();
+    var last = c.pop();
+    
+    output += c.join(', ');
+    output += ", and " + last;
+    output += ". You can message me privately to see what each one does.";
+    return output;
   }
 };
 
 jerk( function( j ) {
-  j.watch_for(new RegExp("^(?:(\\w+):?)?\\s*!(?:(\\w+))(?:\\s+(.*)$)?", 'i'), function(message) {
+  j.watch_for(new RegExp("^(?:([^!?:\\s]+):?)?\\s*!(?:(\\w+))(?:\\s+(.*)$)?", 'i'), function(message) {
     var nick = message.match_data[1] || message.user,
         cmd = (message.match_data[2] || '').toLowerCase(),
         rest = (message.match_data[3] || '').trim();
