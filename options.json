@@ -1,0 +1,12 @@
+{
+  "server": "irc.freenode.net",
+  "nick": "wpdbot",
+  "channels": [ "#webplatform" ],
+  "user":
+    {
+      "username": "wpdbot",
+      "hostname": "home",
+      "servername": "home",
+      "realname": "WPDBOT"
+    }
+}

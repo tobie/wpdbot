@@ -1,0 +1,14 @@
+{
+  "name": "wpdbot",
+  "version": "0.1.0",
+  "description": "An irc bot for the #webplatform channel on freenode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jerk":    ">= 1.1.23"
+  },
+  "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
+  "license": "Apache 2.0"
+}
