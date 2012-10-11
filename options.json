@@ -1,7 +1,7 @@
 {
   "server": "irc.freenode.net",
-  "nick": "_wpdbot",
-  "channels": [ "#wpdbotsandbox", "#wpdbotsandbox-site" ],
+  "nick": "wpdbot",
+  "channels": [ "#webplatform", "#webplatform-site" ],
   "user":
     {
       "username": "wpdbot",
