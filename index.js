@@ -1,6 +1,5 @@
 var jerk = require("jerk");
 var fs = require("fs");
-//var template = require("./lib/template");
 var url = require("url");
 var options = JSON.parse(fs.readFileSync("./options.json"));
 var commands = JSON.parse(fs.readFileSync("./commands.json"));
