@@ -1,5 +1,6 @@
-{ 
+{
   "contribute": "A guide to get started contributing can be found here: http://docs.webplatform.org/wiki/WPD:Getting_Started.",
   "faq": "FAQ can be found here: http://docs.webplatform.org/wiki/Site_FAQ.",
-  "ontopic": "Please keep the conversation strictly on topic. Thank you."
+  "ontopic": "Please keep the conversation strictly on topic. Thank you.",
+  "apple": "Apple chose explicitly to not have its logo in the footer."
 }
