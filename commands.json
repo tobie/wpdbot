@@ -8,6 +8,7 @@
   "docs": "Web Platform Docs starting point from here http://docs.webplatform.org/wiki/",
   "faq": "FAQ can be found here: http://docs.webplatform.org/wiki/Site_FAQ.",
   "forum": "Q&A for all your questions and answers, have a look here http://talk.webplatform.org/forums/",
+  "ontopic": "#webplatform is for conversation and questions about the webplatform.org site and its contents. See http://docs.webplatform.org/wiki/WPD:Keeping_on_Topic for more details on what's appropriate to discuss here.",
   "pr": "My source code is hosted on GitHub: https://github.com/tobie/wpdbot. Please fork me and send a pull request with your requested changes.",
   "tutorials": "All tutorials and hands-on lessons about implementing web technology can be found here http://docs.webplatform.org/wiki/tutorials"
 }
