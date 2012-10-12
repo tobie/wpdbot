@@ -41,7 +41,7 @@ var others = {
 
   goto: function(rest) {
     var output = '#webplatform is for conversation and questions about the webplatform.org site, not for general support. ';
-    output += 'You question would best be answered in ' + toText(rest.split(/\s+/), 'or')  + ".";
+    output += 'Your question would be best answered in ' + toText(rest.split(/\s+/), 'or')  + ".";
     return output;
   }
 };
