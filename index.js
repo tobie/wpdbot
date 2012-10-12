@@ -26,7 +26,7 @@ var others = {
       });
       return 'Here is the result of your search for "' + rest + '": ' + u;
   },
-  
+
   help: function() {
     var output = "Here's a list of all the commands I support: ";
     var c = Object.keys(commands);
@@ -34,14 +34,31 @@ var others = {
       c.push(o)
     });
     c.sort();
-    var last = c.pop();
-    
-    output += c.join(', ');
-    output += ", and " + last;
+    output += toText(c, 'and');
     output += ". You can message me privately to see what each one does.";
+    return output;
+  },
+
+  goto: function(rest) {
+    var output = '#webplatform is for conversation and questions about the webplatform.org site, not for general support. ';
+    output += 'You question would best be answered in ' + toText(rest.split(/\s+/), 'or')  + ".";
     return output;
   }
 };
+
+function toText(arr, conjunction) {
+  var length = arr.length,
+      WS = ' ',
+      COMA = ', ';
+  if (length == 1) {
+    return arr[0];
+  }
+  if (length == 2) {
+    return arr.join(WS + conjunction + WS);
+  }
+  var last = arr.pop();
+  return arr.join(COMA) + COMA + conjunction + WS + last;
+}
 
 jerk( function( j ) {
   j.watch_for(new RegExp("^(?:([^!?:\\s]+):?)?\\s*!(?:(\\w+))(?:\\s+(.*)$)?", 'i'), function(message) {
